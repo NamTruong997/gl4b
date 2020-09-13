@@ -1,10 +1,16 @@
 const express = require('express')
+var expressStaticGzip = require("express-static-gzip");
 
 const app = express()
 const path = require("path");
 app.use(
     expressStaticGzip(path.join(__dirname, 'build'), {
-        enableBrotli: true, // only if you have brotli files too
+        enableBrotli: true,
+        customCompressions: [{
+            encodingName: 'deflate',
+            fileExtension: 'zz'
+        }],
+        orderPreference: ['br']
     }),
 );
 
