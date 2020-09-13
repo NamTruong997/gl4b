@@ -1,10 +1,12 @@
 const express = require('express')
 var expressStaticGzip = require("express-static-gzip");
+var compression = require('compression')
 
 const app = express()
 const path = require("path");
 app.use(
-    expressStaticGzip(path.join(__dirname, 'build'))
+    // expressStaticGzip(path.join(__dirname, 'build'))
+    compression()
 );
 
 app.use(express.static(path.join(__dirname, 'build')));
