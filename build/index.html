@@ -16,23 +16,22 @@
     <link rel="apple-touch-icon" href="logo192.png" />
     <link rel="manifest" href="/manifest.json" />
 
-    <link rel=”preload”
-    href=”https://www.gameloft.com/forbrands/static/media/slick.woff” as=”font”
-    type=”font/woff” crossorigin=”anonymous”>
-
     <title>Meaningful Connections & Gaming Experiences | Gameloft</title>
-    <script src="/setting.js"></script>
-    <script
-      defer="defer"
-      src="https://www.googletagmanager.com/gtag/js?id=UA-160359503-1"
-    ></script>
-    <script defer="defer">
+    <link rel="preload" href="https://www.gameloft.com/forbrands/" />
+    <link rel="preload" href="https://www.gameloft.com/forbrands/static/media/slick.wof" as="font" type="font/woff" crossorigin="anonymous" />
+    <script defer src="/setting.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-160359503-1"></script>
+    <script defer>
+      window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      (window.dataLayer = window.dataLayer || []),
-        gtag("js", new Date()),
-        gtag("config", "UA-160359503-1", { cookie_expires: 31536e3 });
+      gtag("js", new Date());
+
+      gtag("config", "UA-160359503-1", {
+        cookie_expires: 365 * 24 * 60 * 60, // 365 days, in seconds
+      });
     </script>
     <link href="/static/css/main.09edeb33.chunk.css" rel="stylesheet" />
   </head>
