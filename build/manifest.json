@@ -1,15 +1,15 @@
 {
-  "short_name": "GL Ads",
-  "name": "Gameloft For Branchs",
+  "short_name": "Survival",
+  "name": "Survival website",
   "icons": [
     {
-      "src": "https://gameloft-for-brands.s3-ap-southeast-1.amazonaws.com/assets/icon-gameloft.png",
+      "src": "icon-fav.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "yellow",
-  "background_color": "black"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
